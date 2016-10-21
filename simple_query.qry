@@ -1,0 +1,36 @@
+/*
+ * Simple Apama Query for Project Che Innovation Week
+ */ 
+package apamax.project_che;
+
+query SimpleQuery {
+	parameters {
+		/**
+		 * Some parameters
+		 */
+		float f;
+		integer i;
+		string s;
+	}
+	
+	inputs {
+		/**
+		 * Some Inputs
+		 */
+		Tick() key name within 7 days;
+	}
+
+	/**
+	 * Some Pattern
+	 */
+	find Tick:t
+		where t.name = s {
+		%send("eventType":"Response",
+				"title":"Send a response",
+				"description":"Sends an event response",
+				"channel":"\"apamax.project_che\"",
+				"fields": {
+					"message":"\"This is a message\""
+				});
+	}
+} 
