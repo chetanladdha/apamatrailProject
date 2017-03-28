@@ -1,0 +1,11 @@
+package com.customer;
+using library;
+event orders{
+    integer id;
+    string str; 
+    
+}
+event process{
+    orders ordersaa;
+  
+}

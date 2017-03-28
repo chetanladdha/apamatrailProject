@@ -1,0 +1,5 @@
+package library;
+event book{
+    string name;
+    string author;
+}
