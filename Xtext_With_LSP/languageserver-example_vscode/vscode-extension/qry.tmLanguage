@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>*.qry</string>
+		<string>*.mon</string>
+	</array>
+	<key>name</key>
+	<string>qry</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>keyword.control.qry</string>
+			<key>match</key>
+			<string>\b(ALL|AND|BY|EQUALS|EVERY|FALSE|FROM|GROUP|HAVING|IN|JOIN|LARGEST|NOT|OR|PARTITION|RETAIN|RSTREAM|SELECT|SMALLEST|SYNC|TRUE|UNIQUE|WHERE|WITH|WITHIN|abstract|action|aggregate|all|and|as|assert|at|between|bignum|boolean|bounded|break|by|byte|case|catch|char|class|completed|constant|continue|currentTime|day|days|decimal|default|dictionary|die|else|emit|enqueue|enum|equals|eval|event|every|except|extends|false|finally|find|float|for|from|group|having|hour|hours|if|ifpresent|immutable|implements|import|in|inputs|instanceof|integer|interface|join|key|largest|log|metadata|millisecond|milliseconds|min|minute|minutes|monitor|msec|native|new|not|null|on|optional|or|otherwise|package|parameters|partition|persistent|print|private|protected|public|query|retain|return|returns|route|rstream|runtime|sec|second|seconds|select|send|sequence|smallest|sortedsequence|spawn|static|stream|streamsource|string|super|switch|sync|synchronized|table|then|throw|throws|time|to|transient|true|try|unbounded|unique|unmatched|using|void|volatile|wait|where|while|wildcard|window|with|within|without|xor)\b</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.qry</string>
+</dict>
+</plist>
